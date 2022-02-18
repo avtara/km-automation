@@ -1,6 +1,6 @@
-# Bedrock-TS
+# km-automation
 
-Generate independent campus reports into csv files automatically
+Generate Kampus Merdeka reports into csv files automatically
 
 ## About This Project
 
