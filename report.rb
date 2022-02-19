@@ -9,13 +9,13 @@ class Report
     )
 
     response = @conn.post('/user/auth/login/mbkm') do |req|
-      req.body = {email: email, password: password}.to_json
+      req.body = { email: email, password: password }.to_json
       req.headers['User-Agent'] = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'
       req.headers['Content-Type'] = 'application/json'
     end
 
-    data = JSON.parse response.body
-    @token =  data["data"]["access_token"]
+    response.status == 200 ? @token = data = JSON.parse(response.body)["data"]["access_token"]
+      : puts(JSON.parse(response.body)["error"]["message"])
   end
 
 end
