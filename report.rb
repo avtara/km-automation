@@ -14,7 +14,7 @@ class Report
       req.headers['Content-Type'] = 'application/json'
     end
 
-    response.status == 200 ? @token = data = JSON.parse(response.body)["data"]["access_token"]
+    response.status == 200 ? @token = JSON.parse(response.body)["data"]["access_token"]
       : puts(JSON.parse(response.body)["error"]["message"])
   end
 
