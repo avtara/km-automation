@@ -4,7 +4,7 @@ Generate Kampus Merdeka reports into csv files automatically
 
 ## About This Project
 
-km-automation is a tool that will help you to get daily / weekly reports from the independent campus faster without having to copy and paste one by one, because it is very tiring :(
+km-automation is a tool that will help you to get daily / weekly reports from the Kampus Merdeka faster without having to copy and paste one by one, because it is very tiring :(
 
 Please note that this project is currently in the early stage of development
 
